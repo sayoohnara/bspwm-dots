@@ -1,0 +1,8 @@
+#! /bin/sh
+xsetwacom set "Wacom One by Wacom M Pen stylus" MapToOutput 2560x1440+1920+0
+xsetwacom set "Wacom One by Wacom M Pen stylus" Area 0 0 21600 12150
+xsetwacom set "Wacom One by Wacom M Pen stylus" Rotate half
+
+xsetwacom set "Wacom One by Wacom M Pen eraser" Rotate half
+xsetwacom set "Wacom One by Wacom M Pen eraser" MapToOutput 2560x1440+1920+0
+xsetwacom set "Wacom One by Wacom M Pen eraser" Area 0 0 21600 12150
