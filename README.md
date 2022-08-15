@@ -9,3 +9,6 @@
 ## Wallpaper
 The desktop wallpaper can be found here https://hdqwalls.com/wallpaper/2560x1440/blue-forest-minimal-4k,
 the rofi wallpaper is my own creation so feel free to use it.
+
+## Screenshots
+![Screenshots](https://github.com/sayoohnara/bspwm-dots/blob/main/screenshots/rice3.png)
