@@ -1,2 +1,2 @@
 # bspwm-dots
-My dots will be messy for a while, but I´ll work things out.
+**These dots are made for a 1440p display, on other resolutions it is to be expected to work things out yourself, if something is not looking like intended**
