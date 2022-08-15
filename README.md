@@ -4,3 +4,7 @@
 ## Dependencies
 - Nerd Fonts
 - yay and pacman-contrib (for available updates on arch)
+
+## Wallpaper
+The desktop wallpaper can be found here https://hdqwalls.com/wallpaper/2560x1440/blue-forest-minimal-4k,
+the rofi wallpaper is my own creation so feel free to use it.
