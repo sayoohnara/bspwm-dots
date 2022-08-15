@@ -3,3 +3,4 @@
 
 ## Dependencies
 Nerd Fonts
+yay and pacman-contrib (for available updates on arch)
