@@ -1,0 +1,47 @@
+#! /bin/sh
+
+### AUTOSTART ####
+pgrep -x sxhkd > /dev/null || sxhkd &
+# Wallpaper
+~/.fehbg &
+# Polkit Agent
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+# Polybar
+$HOME/.config/polybar/launch.sh &
+# Left monitor fix
+killall multifix.sh 
+~/.config/bspwm/scripts/multifix.sh &
+# Compositing
+picom &
+# -------------------------------------------------------------
+
+### BSPWM MONITOR SETTINGS ###
+bspc wm -O DP-4 DP-2 & 
+bspc monitor DP-4 -d 1 2 3 4 5  
+bspc monitor DP-2 -d 6 7 8 9 0  
+bspc config remove_disabled_monitors false
+bspc config remove_unplugged_monitors false
+# -------------------------------------------------------------
+
+### LOOK AND FEEL ###
+bspc config border_width        3
+bspc config window_gap          12
+bspc config normal_border_color "#334a5b"
+bspc config active_border_color "#334a5b"
+bspc config focused_border_color "#74adc0"
+
+bspc config split_ratio          0.50
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+bspc config -m DP-4 top_padding 36
+# -------------------------------------------------------------
+
+### PROGRAM RULES ###
+bspc rule -a Gimp desktop='^8' state=floating follow=on
+bspc rule -a Chromium desktop='^2'
+bspc rule -a mplayer2 state=floating
+bspc rule -a Kupfer.py focus=on
+bspc rule -a Screenkey manage=off
+bspc rule -a Steam state=floating
+bspc rule -a Lutris state=floating
+bspc rule -a Zathura state=tiled
