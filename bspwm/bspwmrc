@@ -21,6 +21,8 @@ bspc monitor DP-4 -d 1 2 3 4 5
 bspc monitor DP-2 -d 6 7 8 9 0  
 bspc config remove_disabled_monitors false
 bspc config remove_unplugged_monitors false
+bspc config focus_follows_pointer true
+#bspc config single_monocle true
 # -------------------------------------------------------------
 
 ### LOOK AND FEEL ###
